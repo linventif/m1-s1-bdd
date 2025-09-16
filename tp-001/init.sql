@@ -282,17 +282,17 @@ INSERT INTO TYPETRAVAUX (NomTY, Tarif_Heure_Clt, Tarif_Heure_Employe, idGA) VALU
 INSERT INTO TYPETRAVAUX (NomTY, Tarif_Heure_Clt, Tarif_Heure_Employe, idGA) VALUES
 ('Ventilation / Climatisation',   130.00, 80.00, 2);
 INSERT INTO TYPETRAVAUX (NomTY, Tarif_Heure_Clt, Tarif_Heure_Employe, idGA) VALUES
-('Électricité',                   115.00, 68.00, 2);
+('Électricité',                   115.00, 69.00, 2);
 INSERT INTO TYPETRAVAUX (NomTY, Tarif_Heure_Clt, Tarif_Heure_Employe, idGA) VALUES
-('Chaudronnerie',                 140.00, 85.00, 1);
+('Chaudronnerie',                 140.00, 110.00, 1);
 INSERT INTO TYPETRAVAUX (NomTY, Tarif_Heure_Clt, Tarif_Heure_Employe, idGA) VALUES
-('Plomberie',                     105.00, 63.00, 2);
+('Plomberie',                     105.00, 75.00, 2);
 INSERT INTO TYPETRAVAUX (NomTY, Tarif_Heure_Clt, Tarif_Heure_Employe, idGA) VALUES
-('Menuiserie',                     95.00, 57.00, 4);
+('Menuiserie',                     95.00, 85.00, 4);
 INSERT INTO TYPETRAVAUX (NomTY, Tarif_Heure_Clt, Tarif_Heure_Employe, idGA) VALUES
-('Mobilier',                      150.00, 90.00, 4);
+('Mobilier',                      150.00, 120.00, 4);
 INSERT INTO TYPETRAVAUX (NomTY, Tarif_Heure_Clt, Tarif_Heure_Employe, idGA) VALUES
-('Plafonnage',                     65.00, 39.00, 4);
+('Plafonnage',                     65.00, 60.00, 4);
 
 -- AUTORISER
 INSERT INTO AUTORISER (CodeQ, idGA) VALUES (1, 1);
@@ -330,93 +330,91 @@ INSERT INTO COMPRENDRE (CodeDE, CodeTY, NbHeuresPrev) VALUES (10, 7, 260.00);
 
 -- TRAVAILLERHORSDEVIS
 INSERT INTO TRAVAILLERHORSDEVIS (CodeCH, CodeE, DateT, CodeTY, NbHeureTrav) VALUES
-(1, 1,  TO_DATE('2024-01-16','YYYY-MM-DD'), 1,  8.00);
+(1, 1,  TO_DATE('2022-01-16','YYYY-MM-DD'), 1,  8.00);
 INSERT INTO TRAVAILLERHORSDEVIS VALUES
-(1, 2,  TO_DATE('2024-01-16','YYYY-MM-DD'), 2,  6.00);
+(1, 2,  TO_DATE('2023-01-16','YYYY-MM-DD'), 2,  6.00);
 INSERT INTO TRAVAILLERHORSDEVIS VALUES
 (2, 3,  TO_DATE('2024-02-21','YYYY-MM-DD'), 3,  7.00);
 INSERT INTO TRAVAILLERHORSDEVIS VALUES
-(2, 4,  TO_DATE('2024-02-21','YYYY-MM-DD'), 4,  5.00);
+(2, 4,  TO_DATE('2022-02-21','YYYY-MM-DD'), 4,  5.00);
 INSERT INTO TRAVAILLERHORSDEVIS VALUES
-(3, 5,  TO_DATE('2024-03-11','YYYY-MM-DD'), 5,  9.00);
+(3, 5,  TO_DATE('2023-03-11','YYYY-MM-DD'), 5,  9.00);
 INSERT INTO TRAVAILLERHORSDEVIS VALUES
-(3, 6,  TO_DATE('2024-03-11','YYYY-MM-DD'), 6,  4.00);
+(3, 6,  TO_DATE('2025-03-11','YYYY-MM-DD'), 6,  4.00);
 INSERT INTO TRAVAILLERHORSDEVIS VALUES
-(4, 7,  TO_DATE('2024-04-06','YYYY-MM-DD'), 7,  8.00);
+(4, 7,  TO_DATE('2022-04-06','YYYY-MM-DD'), 7,  8.00);
 INSERT INTO TRAVAILLERHORSDEVIS VALUES
-(4, 8,  TO_DATE('2024-04-06','YYYY-MM-DD'), 8,  6.00);
+(4, 8,  TO_DATE('2023-04-06','YYYY-MM-DD'), 8,  6.00);
 INSERT INTO TRAVAILLERHORSDEVIS VALUES
 (5, 9,  TO_DATE('2024-05-16','YYYY-MM-DD'), 9,  7.00);
 INSERT INTO TRAVAILLERHORSDEVIS VALUES
-(5, 10, TO_DATE('2024-05-16','YYYY-MM-DD'), 10, 5.00);
+(5, 10, TO_DATE('2022-05-16','YYYY-MM-DD'), 10, 5.00);
 INSERT INTO TRAVAILLERHORSDEVIS VALUES
-(6, 1,  TO_DATE('2024-06-26','YYYY-MM-DD'), 11, 9.00);
+(6, 1,  TO_DATE('2023-06-26','YYYY-MM-DD'), 11, 9.00);
 INSERT INTO TRAVAILLERHORSDEVIS VALUES
-(6, 2,  TO_DATE('2024-06-26','YYYY-MM-DD'), 12, 4.00);
+(6, 2,  TO_DATE('2025-06-26','YYYY-MM-DD'), 12, 4.00);
 INSERT INTO TRAVAILLERHORSDEVIS VALUES
-(7, 3,  TO_DATE('2024-07-31','YYYY-MM-DD'), 13, 8.00);
+(7, 3,  TO_DATE('2022-07-31','YYYY-MM-DD'), 13, 8.00);
 INSERT INTO TRAVAILLERHORSDEVIS VALUES
-(7, 4,  TO_DATE('2024-07-31','YYYY-MM-DD'), 14, 6.00);
+(7, 4,  TO_DATE('2023-07-31','YYYY-MM-DD'), 14, 6.00);
 INSERT INTO TRAVAILLERHORSDEVIS VALUES
 (8, 5,  TO_DATE('2024-08-13','YYYY-MM-DD'), 15, 7.00);
 INSERT INTO TRAVAILLERHORSDEVIS VALUES
-(8, 6,  TO_DATE('2024-08-13','YYYY-MM-DD'), 16, 5.00);
+(8, 6,  TO_DATE('2022-08-13','YYYY-MM-DD'), 16, 5.00);
 INSERT INTO TRAVAILLERHORSDEVIS VALUES
-(9, 7,  TO_DATE('2024-09-19','YYYY-MM-DD'), 1,  8.00);
+(9, 7,  TO_DATE('2023-09-19','YYYY-MM-DD'), 1,  8.00);
 INSERT INTO TRAVAILLERHORSDEVIS VALUES
-(9, 8,  TO_DATE('2024-09-19','YYYY-MM-DD'), 3,  6.00);
+(9, 8,  TO_DATE('2025-09-19','YYYY-MM-DD'), 3,  6.00);
 INSERT INTO TRAVAILLERHORSDEVIS VALUES
-(10, 9, TO_DATE('2024-10-23','YYYY-MM-DD'), 5,  7.00);
+(10, 9, TO_DATE('2022-10-23','YYYY-MM-DD'), 5,  7.00);
 INSERT INTO TRAVAILLERHORSDEVIS VALUES
-(10, 10, TO_DATE('2024-10-23','YYYY-MM-DD'), 7, 5.00);
+(10, 10, TO_DATE('2023-10-23','YYYY-MM-DD'), 7, 5.00);
 
 -- TRAVAILLERDEVIS
 INSERT INTO TRAVAILLERDEVIS (CodeDE, CodeE, DateT, CodeTY, NbHeureTravDEVIS) VALUES
-(1, 1,  TO_DATE('2024-01-17','YYYY-MM-DD'), 1,  8.00);
+(1, 1,  TO_DATE('2022-01-17','YYYY-MM-DD'), 1,  8.00);
 INSERT INTO TRAVAILLERDEVIS VALUES
-(1, 2,  TO_DATE('2024-01-17','YYYY-MM-DD'), 2,  6.00);
+(1, 2,  TO_DATE('2023-01-17','YYYY-MM-DD'), 2,  6.00);
 INSERT INTO TRAVAILLERDEVIS VALUES
 (2, 3,  TO_DATE('2024-02-22','YYYY-MM-DD'), 3,  7.00);
 INSERT INTO TRAVAILLERDEVIS VALUES
-(2, 4,  TO_DATE('2024-02-22','YYYY-MM-DD'), 4,  5.00);
+(2, 4,  TO_DATE('2025-02-22','YYYY-MM-DD'), 4,  5.00);
 INSERT INTO TRAVAILLERDEVIS VALUES
-(3, 5,  TO_DATE('2024-03-12','YYYY-MM-DD'), 5,  9.00);
+(3, 5,  TO_DATE('2022-03-12','YYYY-MM-DD'), 5,  9.00);
 INSERT INTO TRAVAILLERDEVIS VALUES
-(3, 6,  TO_DATE('2024-03-12','YYYY-MM-DD'), 6,  4.00);
+(3, 6,  TO_DATE('2023-03-12','YYYY-MM-DD'), 6,  4.00);
 INSERT INTO TRAVAILLERDEVIS VALUES
 (4, 7,  TO_DATE('2024-04-07','YYYY-MM-DD'), 7,  8.00);
 INSERT INTO TRAVAILLERDEVIS VALUES
-(4, 8,  TO_DATE('2024-04-07','YYYY-MM-DD'), 8,  6.00);
+(4, 8,  TO_DATE('2025-04-07','YYYY-MM-DD'), 8,  6.00);
 INSERT INTO TRAVAILLERDEVIS VALUES
-(5, 9,  TO_DATE('2024-05-17','YYYY-MM-DD'), 9,  7.00);
+(5, 9,  TO_DATE('2022-05-17','YYYY-MM-DD'), 9,  7.00);
 INSERT INTO TRAVAILLERDEVIS VALUES
-(5, 10, TO_DATE('2024-05-17','YYYY-MM-DD'), 10, 5.00);
+(5, 10, TO_DATE('2023-05-17','YYYY-MM-DD'), 10, 5.00);
 INSERT INTO TRAVAILLERDEVIS VALUES
 (6, 1,  TO_DATE('2024-06-27','YYYY-MM-DD'), 11, 9.00);
 INSERT INTO TRAVAILLERDEVIS VALUES
-(6, 2,  TO_DATE('2024-06-27','YYYY-MM-DD'), 12, 4.00);
+(6, 2,  TO_DATE('2025-06-27','YYYY-MM-DD'), 12, 4.00);
 INSERT INTO TRAVAILLERDEVIS VALUES
-(7, 3,  TO_DATE('2024-08-01','YYYY-MM-DD'), 13, 8.00);
+(7, 3,  TO_DATE('2022-08-01','YYYY-MM-DD'), 13, 8.00);
 INSERT INTO TRAVAILLERDEVIS VALUES
-(7, 4,  TO_DATE('2024-08-01','YYYY-MM-DD'), 14, 6.00);
+(7, 4,  TO_DATE('2023-08-01','YYYY-MM-DD'), 14, 6.00);
 INSERT INTO TRAVAILLERDEVIS VALUES
 (8, 5,  TO_DATE('2024-08-14','YYYY-MM-DD'), 15, 7.00);
 INSERT INTO TRAVAILLERDEVIS VALUES
-(8, 6,  TO_DATE('2024-08-14','YYYY-MM-DD'), 16, 5.00);
+(8, 6,  TO_DATE('2025-08-14','YYYY-MM-DD'), 16, 5.00);
 INSERT INTO TRAVAILLERDEVIS VALUES
-(9, 7,  TO_DATE('2024-09-20','YYYY-MM-DD'), 1,  8.00);
+(9, 7,  TO_DATE('2022-09-20','YYYY-MM-DD'), 1,  8.00);
 INSERT INTO TRAVAILLERDEVIS VALUES
-(9, 8,  TO_DATE('2024-09-20','YYYY-MM-DD'), 3,  6.00);
+(9, 8,  TO_DATE('2023-09-20','YYYY-MM-DD'), 3,  6.00);
 INSERT INTO TRAVAILLERDEVIS VALUES
 (10, 9, TO_DATE('2024-10-24','YYYY-MM-DD'), 5,  7.00);
 INSERT INTO TRAVAILLERDEVIS VALUES
-(10, 10, TO_DATE('2024-10-24','YYYY-MM-DD'), 7, 5.00);
+(10, 10, TO_DATE('2025-10-24','YYYY-MM-DD'), 7, 5.00);
 
 COMMIT;
 
--- 4) Requêtes (Q1 corrigée, les autres laissent l’énoncé en commentaires)
-
--- Q1. Code et adresse postale complète (rue + ville) des chantiers
+-- 1. Code et adresse postale complète (rue + ville) des chantiers
 --     ayant fait intervenir des employés dans le cadre de devis
 SELECT DISTINCT
     ch.CodeCH,
@@ -431,47 +429,37 @@ FROM
 WHERE
     d.CodeDE  = td.CodeDE
 AND ch.CodeCH = d.CodeCH
-AND v.CodeV   = ch.CodeV
-ORDER BY ch.CodeCH;
-
-
-
--- Questions
--- M. Lagassac, le PDG de ce groupe, souhaite effectuer des requêtes ad-hoc
--- (requêtes à la demande) sur cet ED. Il fait appel à vos compétences en SQL
--- pour écrire les requêtes SQL répondant aux besoins suivants :
-
--- 1. Code et adresse postale complète (rue et ville) des chantiers ayant fait intervenir
--- des employés dans le cadre de devis
-
-/*
-ENTREPRISE(N°Siret, RaisonSoc, TypeSoc, GroupeSoc, CodeV#)
-VILLE(CodeV, NomV, CodeDeptV, RegionV)
-DEVIS(CodeDE, DateDe, N°Siret#, CodeCH#)
-CHANTIER(CodeCH, RueCH, CodePostCH, CodeV#)
-QUALIF(CodeQ, NomQ, NiveauQ)
-EMPLOYE(CodeE, NomE, PrenomE, CodeQ#, N°Siret#)
-TYPETRAVAUX(CodeTY, NomTY, Tarif_Heure_Clt, Tarif_Heure_Employé, idGa#)
-GAMMETRAVAUX(idGA, NomGA)
-AUTORISER(CodeQ#, idGA#)
-COMPRENDRE(CodeDE#, CodeTY#, NbHeuresPrev)
-TRAVAILLERHORSDEVIS(CodeCH#, CodeE#, DateT, CodeTY#, NbHeureTrav)
-TRAVAILLERDEVIS(CodeDE#, CodeE#, DateT, CodeTY#, NbHeureTravDEVIS)
- */
-
--- SELECT *
--- FROM DEVIS DE, ENTREPRISE EN, EMPLOYE EM
--- WHERE DE.N_Siret = EN.N_Siret (+)
--- AND EM
-
+AND v.CodeV   = ch.CodeV;
 
 
 -- 2. Nom et Prénom des employés ayant un niveau d’étude supérieur au Bac (BTS ou ingénieur)
--- 3. Codes des départements et noms des villes accueillant des entreprises et des chantiers (classement par ordre
--- « alphabétique » des départements et villes)
+SELECT em.PRENOME, em.NOME
+FROM QUALIF qu, EMPLOYE em
+WHERE (qu.NIVEAUQ = 'BTS' OR qu.NIVEAUQ = 'Ingénieur') AND em.CodeQ = qu.CodeQ
+
+-- 3. Codes des départements et noms des villes accueillant des entreprises et des chantiers
+-- (classement par ordre « alphabétique » des départements et villes)
+SELECT vi.CodeDeptV, vi.REGIONV
+FROM CHANTIER ch, VILLE vi
+WHERE ch.CodeV = vi.CodeV
+ORDER BY RegionV ASC
+
 -- 4. Nom des types de travaux dont le coût horaire employé représente plus de 80% du cout horaire client.
+SELECT tt.NOMTY
+FROM TYPETRAVAUX tt
+WHERE tt.TARIF_HEURE_EMPLOYE > tt.Tarif_Heure_Clt * 0.8
+
+
 -- 5. Nom des types de travaux ayant nécessité des réalisations hors devis cette année
+SELECT tt.NOMTY
+FROM TYPETRAVAUX tt, TRAVAILLERHORSDEVIS thd
+WHERE tt.CODETY = thd.CODETY AND extract(YEAR FROM thd.DATET) = 2025
+
 -- 6. Raison Sociale des entreprises ayant proposé des devis cette année dans les villes où elles sont implantées
+SELECT en.RAISONSOC
+FROM ENTREPRISE en, DEVIS de, CHANTIER ch
+WHERE en.N_SIRET = de.N_Siret AND ch.CodeCH = de.CodeCH AND en.CODEV = ch.CODEV
+
 -- 7. Pour chaque gamme de travaux, donner son nom et le nom des types de travaux associés s’il en possède
 -- 8. Nom des gammes et des types de travaux rentables (types de travaux dont le gain entre le tarif horaire payé par le client et le tarif horaire payé aux employés est supérieur à 80% du tarif horaire employé) avec en-têtes
 -- personnalisés et classement décroissant des rentabilités
