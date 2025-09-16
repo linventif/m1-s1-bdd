@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+    mariadb:
+        image: mariadb:latest
+        container_name: mariadb_m1_s1_bdd
+        ports:
+            - '3306:3306'
+        environment:
+            MARIADB_ROOT_PASSWORD: 'root'
+            MARIADB_USER: 'user'
+            MARIADB_PASSWORD: 'user'
+            MARIADB_DATABASE: 'bdd'
+        volumes:
+            - mariadb_data_m1_s1_bdd:/var/lib/mysql
+
+volumes:
+    mariadb_data_m1_s1_bdd:
