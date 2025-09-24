@@ -1,0 +1,20 @@
+SELECT c.Domaine, c.NomCO
+FROM Enseignant e, Cours c
+WHERE e.CPNE LIKE '3%'
+AND e.CodeEN = c.CodeEN (+)
+
+---
+
+SELECT e.NomEN, e.PrenomEN
+FROM Enseignant e, Effectuer ef
+GROUP BY e.CodeEN
+AND to_chart(ef.DateDeb, 'YYYY') = '2025'
+HAVING SUM(ef.HeureDeb) >
+	(FROM Enseignant e, 
+	HAVING SELECT SUM(ef.HeureDeb)
+	FROM Enseignant e, Effectuer ef
+	WHERE e.NomEN = 'RAVAT'
+	AND e.PrenomEN = 'Franck'
+	AND e.CodeEn = ef.CodeEN
+	AND to_chart(ef.DateDeb, 'YYYY') = '2025')
+

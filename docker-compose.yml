@@ -1,34 +1,17 @@
-# services:
-#     mariadb:
-#         image: mariadb:latest
-#         container_name: mariadb_m1_s1_bdd
-#         ports:
-#             - '3306:3306'
-#         environment:
-#             MARIADB_ROOT_PASSWORD: 'root'
-#             MARIADB_USER: 'user'
-#             MARIADB_PASSWORD: 'user'
-#             MARIADB_DATABASE: 'bdd'
-#         volumes:
-#             - mariadb_data_m1_s1_bdd:/var/lib/mysql
-#
-# volumes:
-#     mariadb_data_m1_s1_bdd:
-
 services:
   oracle:
     image: gvenzl/oracle-free:latest
     container_name: oracle_m1_s1_bdd
     ports:
-      - "1521:1521"   # port SQL*Net
+      - "1521:1521"   # SQL*Net
       - "5500:5500"   # Enterprise Manager Express
     environment:
       ORACLE_PASSWORD: root
-      APP_USER: user
-      APP_USER_PASSWORD: user
       ORACLE_DATABASE: bdd
+      APP_USERS: user/user  # 👈 this replaces APP_USER + APP_USER_PASSWORD
     volumes:
       - oracle_data_m1_s1_bdd:/opt/oracle/oradata
+      - ./tp-001:/scripts
 
 volumes:
   oracle_data_m1_s1_bdd:

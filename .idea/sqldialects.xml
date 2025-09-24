@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/tp-001/init.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/tp-001/init.sql" dialect="OracleSqlPlus" />
+    <file url="file://$PROJECT_DIR$/tp-001/insert_data.sql" dialect="OracleSqlPlus" />
+    <file url="file://$PROJECT_DIR$/tp-001/questions.sql" dialect="OracleSqlPlus" />
     <file url="PROJECT" dialect="MariaDB" />
   </component>
 </project>
