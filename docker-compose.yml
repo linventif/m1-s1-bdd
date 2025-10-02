@@ -11,7 +11,8 @@ services:
       APP_USERS: user/user  # 👈 this replaces APP_USER + APP_USER_PASSWORD
     volumes:
       - oracle_data_m1_s1_bdd:/opt/oracle/oradata
-      - ./tp-001:/scripts
+      - ./tp-001:/tp-001
+      - ./tp-002:/tp-002
 
 volumes:
   oracle_data_m1_s1_bdd:

@@ -595,6 +595,11 @@ HAVING COUNT(ent.NSIRET) = (
 -- Grégoire Launay--Bécue
 
 -- 45. Donner le code des départements accueillant toutes les sociétés du groupe
+
+
+
+
+
 SELECT v.CodeDeptV
 FROM VILLE v, ENTREPRISE ent
 WHERE v.CodeV = ent.CodeV
