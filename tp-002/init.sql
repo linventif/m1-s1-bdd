@@ -2,7 +2,7 @@
 DECLARE
   user_exists NUMBER;
 BEGIN
-  SELECT COUNT(*) INTO user_exists FROM dba_users WHERE username = 'TP1';
+  SELECT COUNT(*) INTO user_exists FROM dba_users WHERE username = 'TP2';
   IF user_exists = 0 THEN
     EXECUTE IMMEDIATE 'CREATE USER tp2 IDENTIFIED BY tp2';
     EXECUTE IMMEDIATE 'GRANT CONNECT, RESOURCE TO tp2';

@@ -17,6 +17,7 @@ FROM SOCIETE so, RESERVER re, CLIENT cl
     SELECT *
     FROM RESERVER
 -- 3. Nom des sociétés ayant effectué dix réservations débutant cette année
+
 -- 4. Nom des sociétés n’ayant effectué aucune réservation en 2018 (arrivées et départs en 2018)
 -- 5. Nom des sociétés ayant effectué toutes réservations débutant cette année
 -- 6. Nom des sociétés n’ayant effectué que des réservations cette année (arrivée et départ cette année)
