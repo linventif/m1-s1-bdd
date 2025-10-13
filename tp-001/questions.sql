@@ -624,3 +624,42 @@ HAVING COUNT(ent.NSIRET) > (
     GROUP BY v2.CodeDeptV
 )
 -- Grégoire Launay--Bécue
+
+SELECT qu.NomQ, COUNT(dv.CodeDE)
+FROM QUALIF qu, DEVIS dv, GAMMETRAVAUX gt, TYPETRAVAUX ty, COMPRENDRE cm, AUTORISER au, CHANTIER ch, VILLE vi
+WHERE dv.CodeDE = cm.CodeDE
+AND cm.CodeTY = ty.CodeTY
+AND ty.idGA = gt.idGA
+AND gt.idGA = au.idGA
+AND au.CodeQ = au.CodeQ
+AND ch.CodeCH = dv.CodeCH
+AND ch.CodeV = vi.CodeV
+AND vi.NomV LIKE 'Toulouse'
+GROUP BY qu.CodeQ, qu.NomQ;
+
+SELECT ch.CodeCH, vi.NomV, ent.RaisonSoc, ent.entreprise_ville
+FROM CHANTIER ch, VILLE vi, (
+	SELECT dv.CodeDE, en.RAISONSOC, vi.NomV AS entreprise_ville
+	FROM DEVIS dv, ENTREPRISE en, VILLE vi2
+	WHERE en.N_Siret = dv.N_Siret
+	AND vi.CodeV = en.CodeV
+) ent
+WHERE ch.CodeV = vi.CodeV
+AND ch.CodeDE = ent.CodeDE (+);
+
+SELECT en.RaisonSoc
+FROM ENTREPRISE en, VILLE vi
+WHERE en.CodeV = vi.CodeV
+AND vi.NomV LIKE 'Toulouse'
+AND NOT EXISTS (
+	SELECT *
+	FROM DEVIS dv, CHANTIER ch
+	WHERE dv.CodeCH = ch.CodeCH
+	AND NOT EXISTS (
+		SELECT *
+		FROM DEVIS dv2, CHANTIER ch2, VILLE vi2
+		WHERE dv2.CodeCH = ch2.CodeCH
+		AND vi2.CodeV = ch2.CodeV
+		AND to_char(vi2.CodeDept) LIKE '31%'
+	)
+);

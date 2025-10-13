@@ -2,7 +2,7 @@
 -- Schéma Oracle pour la BD "Les Hôtels"
 -- Conçu pour SQL*Plus
 
-SET FEEDBACK ON
+SET FEEDBACK OFF
 SET DEFINE OFF
 
 -- Suppression sûre des tables (si elles existent)

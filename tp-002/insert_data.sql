@@ -1,6 +1,5 @@
 -- insert_hotels_data.sql
 WHENEVER SQLERROR CONTINUE
-SELECT COUNT(*) FROM SOCIETE;
 INSERT INTO Societe (CodeSoc, RaisonSoc, RueSoc, CpSoc, VilleSoc, DomaineSoc) VALUES (1, 'Societe 01 Informatique', '190 boulevard des Capucines', '5012', 'Genève', 'BTP');
 INSERT INTO Societe (CodeSoc, RaisonSoc, RueSoc, CpSoc, VilleSoc, DomaineSoc) VALUES (2, 'Societe 02 Banque', '152 rue de la Paix', '1520', 'Madrid', 'Informatique');
 INSERT INTO Societe (CodeSoc, RaisonSoc, RueSoc, CpSoc, VilleSoc, DomaineSoc) VALUES (3, 'Societe 03 BTP', '130 chemin des Prés', '13478', 'Lyon', 'BTP');

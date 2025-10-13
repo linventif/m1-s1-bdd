@@ -15,10 +15,10 @@ END;
 CONNECT tp1/tp1@//localhost:1521/BDD
 
 -- Create schema
-@/tp-001/create_db.sql
+@/tp-001/scripts/create_db.sql
 
 -- Insert data
 WHENEVER SQLERROR CONTINUE
-@/tp-002/insert_data.sql
+@/tp-001/insert_data.sql
 
 EXIT;
