@@ -13,6 +13,7 @@ services:
       - oracle_data_m1_s1_bdd:/opt/oracle/oradata
       - ./tp-001:/tp-001
       - ./tp-002:/tp-002
+      - ./tp-003:/tp-003
 
 volumes:
   oracle_data_m1_s1_bdd:
